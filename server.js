@@ -31,7 +31,7 @@ app.post("/api/notes", (req, res) => {
 // Function to create new note and count ID for each note
 const createNote = (body, notesArray) => {
     const newNote = body;
-    let notesArray = [];
+    notesArray = [];
   
     body.id = notesArray.length;
     notesArray.push(newNote);
